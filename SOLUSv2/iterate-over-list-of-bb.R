@@ -47,8 +47,11 @@ dir.create(file.path(out.dir, 'export'), recursive = TRUE)
   bb <- vect(bb, crs = "OGC:CRS84")
   
   .a <- abbreviate(i$caption, minlength = 12)
+  .a <- gsub(pattern = ',', replacement = '', x = .a, fixed = TRUE)
+  
   .im <- file.path(out.dir, 'figures', sprintf("%s.png", .a))
-  ragg::agg_png(filename = .im, width = 2200, height = 900, scaling = 2)
+  
+  ragg::agg_png(filename = .im, width = 2200, height = 1200, scaling = 2)
   
   z <- compareAOI(bb, figTitle = i$caption)
   

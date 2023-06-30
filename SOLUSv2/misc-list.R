@@ -1,7 +1,13 @@
 x <- list(
   list(
+    bb = '-87.7152 37.8206,-87.7152 37.9503,-87.4826 37.9503,-87.4826 37.8206,-87.7152 37.8206',
+    caption = 'Evansville, IN',
+    url = 'https://casoilresource.lawr.ucdavis.edu/gmap/?loc=37.88549,-87.59889,z13'
+  ),
+  list(
     bb = '-98.5020 37.9187,-98.5020 38.2026,-98.0846 38.2026,-98.0846 37.9187,-98.5020 37.9187',
-    caption = 'KS155'
+    caption = 'KS155',
+    url = ''
   ),
   list(
     bb = '-97.0893 39.0262,-97.0893 39.3938,-96.0347 39.3938,-96.0347 39.0262,-97.0893 39.0262',
@@ -10,19 +16,23 @@ x <- list(
   ),
   list(
     bb = '-97.4697 30.9909,-97.4697 31.1322,-97.2391 31.1322,-97.2391 30.9909,-97.4697 30.9909',
-    caption = 'Blacklands, TX'
+    caption = 'Blacklands, TX',
+    url = ''
   ),
   list(
     bb = '-96.8927 40.8209,-96.8927 40.8833,-96.7774 40.8833,-96.7774 40.8209,-96.8927 40.8209',
-    caption = 'Pawnee Lake, NE'
+    caption = 'Pawnee Lake, NE',
+    url = ''
   ),
   list(
     bb = '-76.7537 36.6033,-76.7537 36.7356,-76.5232 36.7356,-76.5232 36.6033,-76.7537 36.6033',
-    caption = 'VA800'
+    caption = 'VA800',
+    url = ''
   ),
   list(
     bb = '-77.7619 37.0396,-77.7619 37.1711,-77.5314 37.1711,-77.5314 37.0396,-77.7619 37.0396',
-    caption = 'VA653'
+    caption = 'VA653',
+    url = ''
   ),
   list(
     bb = '-77.2112 36.8763,-77.2112 37.4023,-76.2891 37.4023,-76.2891 36.8763,-77.2112 36.8763',
@@ -36,7 +46,7 @@ x <- list(
   ),
   list(
     bb = '-78.6197 37.0657,-78.6197 37.1972,-78.3892 37.1972,-78.3892 37.0657,-78.6197 37.0657',
-    caption = 'VA037 | VA147',
+    caption = 'VA037-VA147',
     url = ''
   ),
   list(
@@ -46,7 +56,7 @@ x <- list(
   ),
   list(
     bb = '-78.5514 39.5182,-78.5514 39.6454,-78.3006 39.6454,-78.3006 39.5182,-78.5514 39.5182',
-    caption = 'MA | WV, Potomac River',
+    caption = 'MA-WV, Potomac River',
     url = 'https://casoilresource.lawr.ucdavis.edu/gmap/?loc=39.5818,-78.426,z11'
   ),
   list(
@@ -116,7 +126,7 @@ x <- list(
   ),
   list(
     bb = '-122.1354 39.5018,-122.1354 39.6290,-121.8725 39.6290,-121.8725 39.5018,-122.1354 39.5018',
-    caption = 'Sacramento River, Glenn | Butte co. boundary',
+    caption = 'Sacramento River, Glenn - Butte co. boundary',
     url = ''
   ),
   list(
@@ -126,12 +136,12 @@ x <- list(
   ),
   list(
     bb = '-119.5323 36.6515,-119.5323 36.7837,-119.2695 36.7837,-119.2695 36.6515,-119.5323 36.6515',
-    caption = 'Gabbro + vertisols near Sanger, CA',
+    caption = 'Gabbro, vertisols near Sanger, CA',
     url = ''
   ),
   list(
     bb = '-119.7997 36.6051,-119.7997 36.8695,-119.2741 36.8695,-119.2741 36.6051,-119.7997 36.6051',
-    caption = 'Kings River alluvial fan / outwash sequences',
+    caption = 'Kings River alluvial fan, outwash sequences',
     url = ''
   ),
   list(
@@ -151,7 +161,7 @@ x <- list(
   ),
   list(
     bb = '-97.0010 30.7474,-97.0010 31.0306,-96.4754 31.0306,-96.4754 30.7474,-97.0010 30.7474',
-    caption = 'TX331 | TX395',
+    caption = 'TX331-TX395',
     url = ''
   )
 )
