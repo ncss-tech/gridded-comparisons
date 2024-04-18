@@ -173,8 +173,8 @@ polys(tableMtn, lwd = 0.5, border = 'black')
 
 par(mfcol = c(2, 2))
 
-plot(gssurgo.pH, axes = FALSE, main = 'gSSURGO pH 0-25cm', mar = c(1, 1, 1, 4), col = .cols, type = 'continuous', range = pH.range)
-polys(redhills, lwd = 0.5, border = 'black', ext = gssurgo.pH)
+plot(gssurgo.pH, axes = FALSE, main = 'gSSURGO pH 0-25cm', mar = c(1, 1, 1, 4), col = .cols, type = 'continuous', range = pH.range, ext = gssurgo.pH)
+polys(redhills, lwd = 0.5, border = 'black')
 # polys(tableMtn, lwd = 0.5, border = 'black')
 
 plot(gstatsgo.pH, axes = FALSE, main = 'STATSGO pH 0-25cm', mar = c(1, 1, 1, 4), col = .cols, type = 'continuous', range = pH.range, ext = gssurgo.pH)
