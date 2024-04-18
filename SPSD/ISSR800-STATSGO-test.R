@@ -160,7 +160,7 @@ lines(statsgo.poly, lwd = 2)
 par(mfcol = c(1, 2))
 
 
-x <- resample(issr800.clay, gssurgo.clay, method = 'cubic')
+x <- resample(issr800.clay, gssurgo.clay, method = 'near')
 plot(x - gssurgo.clay, col = hcl.colors(100, palette = 'spectral'), axes = FALSE, main = 'ISSR800 - SSURGO')
 lines(issr800.grid, lwd = 0.25, col = grey(0.5))
 lines(ssurgo.poly, lwd = 0.5)
@@ -168,7 +168,7 @@ lines(statsgo.poly, lwd = 2)
 
 
 
-x <- resample(issr800.clay, gstatsgo.clay, method = 'cubic')
+x <- resample(issr800.clay, gstatsgo.clay, method = 'near')
 plot(x - gstatsgo.clay, col = hcl.colors(100, palette = 'spectral'), axes = FALSE, main = 'ISSR800 - STATSGO')
 lines(issr800.grid, lwd = 0.25, col = grey(0.5))
 lines(ssurgo.poly, lwd = 0.5)
