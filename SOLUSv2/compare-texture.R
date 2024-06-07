@@ -129,6 +129,8 @@ bb <- '-122.2131 38.6740,-122.2131 38.8027,-121.9503 38.8027,-121.9503 38.6740,-
 # https://casoilresource.lawr.ucdavis.edu/gmap/?loc=34.53435,-101.25026,z14
 bb <- '-101.4026 34.4733,-101.4026 34.6082,-101.1056 34.6082,-101.1056 34.4733,-101.4026 34.4733'
 
+# Newport News
+bb <- '-77.2112 36.8763,-77.2112 37.4023,-76.2891 37.4023,-76.2891 36.8763,-77.2112 36.8763'
 
 
 # create WKT from SoilWeb style BBOX
@@ -137,7 +139,7 @@ bb <- vect(bb, crs = "OGC:CRS84")
 
 # ragg::agg_png(filename = 'MI147-texture-15cm.png', width = 2200, height = 900, scaling = 2)
 
-z <- compareAOI(bb, figTitle = 'TX045')
+z <- compareAOI(bb, figTitle = 'Newport News')
 
 # dev.off()
 

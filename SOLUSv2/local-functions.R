@@ -13,20 +13,30 @@ compareAOI <- function(aoi, figTitle = '') {
   values(s.texture) <- ssc_to_texcl(sand = values(tx.sand$SOLUS), clay = values(tx.clay$SOLUS), droplevels = TRUE)
   
   ## compare classes
-  z <- compare(g.texture, s.texture, oper = '==')
+  # z <- compare(g.texture, s.texture, oper = '==')
   
   ## match colors
-  g.cols <- txt.lut$hex[match(
+  .m <- match(
     levels(g.texture)[[1]]$label,
     txt.lut$class
-  )]
-  
-  s.cols <- txt.lut$hex[match(
+  )
+  g.cols <- data.frame(
+    id = seq_along(.m),
+    hex = txt.lut$hex[.m]
+  )
+
+  .m <- match(
     levels(s.texture)[[1]]$label,
     txt.lut$class
-  )]
+  )
+  s.cols <- data.frame(
+    id = seq_along(.m),
+    hex = txt.lut$hex[.m]
+  )
   
-  
+  ## assign color tables
+  coltab(g.texture) <- g.cols
+  coltab(s.texture) <- s.cols
   
   ## add ISSR-800
   
