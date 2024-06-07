@@ -125,6 +125,11 @@ bb <- '-119.7765 36.8951,-119.7765 36.9611,-119.6451 36.9611,-119.6451 36.8951,-
 bb <- '-122.2131 38.6740,-122.2131 38.8027,-121.9503 38.8027,-121.9503 38.6740,-122.2131 38.6740'
 
 
+# TX045
+# https://casoilresource.lawr.ucdavis.edu/gmap/?loc=34.53435,-101.25026,z14
+bb <- '-101.4026 34.4733,-101.4026 34.6082,-101.1056 34.6082,-101.1056 34.4733,-101.4026 34.4733'
+
+
 
 # create WKT from SoilWeb style BBOX
 bb <- sprintf("POLYGON((%s))", bb)
@@ -132,7 +137,7 @@ bb <- vect(bb, crs = "OGC:CRS84")
 
 # ragg::agg_png(filename = 'MI147-texture-15cm.png', width = 2200, height = 900, scaling = 2)
 
-z <- compareAOI(bb, figTitle = 'Cottonwood Road - GSENM, Utah')
+z <- compareAOI(bb, figTitle = 'TX045')
 
 # dev.off()
 

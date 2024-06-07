@@ -129,6 +129,7 @@ getData <- function(aoi, .variable, .SOLUS_variable, .rescale_value, .depth = 15
   
   # join aggregate soil data + RAT
   rat <- merge(rat, p, by = 'mukey', sort = FALSE, all.x = TRUE)
+  rat$mukey <- as.integer(rat$mukey)
   levels(m) <- rat
   
   # convert mukey + RAT -> numeric raster

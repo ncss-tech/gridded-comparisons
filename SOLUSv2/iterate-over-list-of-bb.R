@@ -82,7 +82,7 @@ dir.create(file.path(out.dir, 'export'), recursive = TRUE)
 
 
 
-.trash <- map(x, .f = .processBB, .progress = TRUE)
+walk(x, .f = .processBB, .progress = TRUE)
 
 write.csv(
   do.call('rbind', lapply(x, data.frame)),
