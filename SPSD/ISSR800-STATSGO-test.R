@@ -35,9 +35,21 @@ bb <- '-112.5553 35.2983,-112.5553 35.4277,-112.3314 35.4277,-112.3314 35.2983,-
 # ca666
 bb <- '-119.0001 35.3734,-119.0001 35.5026,-118.7763 35.5026,-118.7763 35.3734,-119.0001 35.3734'
 
+# latest test from Chad
+bb <- '-111.3820 33.7662,-111.3820 33.9030,-111.0524 33.9030,-111.0524 33.7662,-111.3820 33.7662'
+
 
 wkt <- sprintf('POLYGON((%s))', bb)
 v <- vect(wkt, crs = 'EPSG:4326')
+
+
+
+## latest from Chad
+# e <- ext(-112.06532953734000557, -110.5266330541149955, 33.17770965763599378, 34.45346418563027413)
+# v <- vect(e, crs = 'EPSG:4326')
+
+
+
 
 
 gssurgo <- mukey.wcs(v, db = 'gSSURGO')
@@ -127,15 +139,20 @@ gssurgo.clay <- as.numeric(gssurgo, index = 'claytotal_r')
 gstatsgo.clay <- as.numeric(gstatsgo, index = 'claytotal_r')
 
 
+# full range
 .range <- round(
   range(
     c(
-      range(ssurgo.rat$claytotal_r, na.rm = TRUE),
-      range(statsgo.rat$claytotal_r, na.rm = TRUE), 
-      range(values(issr800.clay, na.rm = TRUE))
-    )
+      ssurgo.rat$claytotal_r, 
+      statsgo.rat$claytotal_r,
+      values(issr800.clay)
+    ),
+    na.rm = TRUE
   )
 )
+
+
+
 
 
 par(mfcol = c(1, 3))
