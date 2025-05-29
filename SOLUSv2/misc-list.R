@@ -1,5 +1,10 @@
 x <- list(
   list(
+    bb = '-108.7625 36.7728,-108.7625 36.8366,-108.6449 36.8366,-108.6449 36.7728,-108.7625 36.7728',
+    caption = 'Chiprock, NM',
+    url = 'https://casoilresource.lawr.ucdavis.edu/gmap/?loc=36.80489,-108.69573,z14'
+  ),
+  list(
     bb = '-87.7152 37.8206,-87.7152 37.9503,-87.4826 37.9503,-87.4826 37.8206,-87.7152 37.8206',
     caption = 'Evansville, IN',
     url = 'https://casoilresource.lawr.ucdavis.edu/gmap/?loc=37.88549,-87.59889,z13'
